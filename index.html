@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainContent">
+        <div class="displayWeather">
+            <div class="content1 content">
+
+                <div class="tempUnit">
+                    <button id="celcius"> &deg;C</button>
+                    <button id="farheneit">&deg;F</button>
+                </div>
+
+                <div class="weatherIcon"><img
+                        src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png " alt=""
+                        id="icon"></div>
+
+                <div class="currentDayTemp">37<sup class="superscript">&deg;C</sup></div>
+                <div class="areaName">Neutral Body</div>
+
+                <div class="currentDate">
+                    <div class="cDate">27 June'21</div>
+                    <div class="cDay">Thursday | <span class="cTime">00:00:00</span></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <div class="weatherDetails">
+                    <div class="windSpeed"><img id="weatherIcon" alt=""
+                            src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"> Wind
+                        <span class="windData"></span>
+                    </div>
+
+                    <div class="humidity">|<img id="weatherIcon" alt=""
+                            src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"> Humidity
+                        <span class="humidityData"></span>
+                    </div>
+
+                    <div class="rain">|<img id="weatherIcon" alt=""
+                            src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"> Rain
+                        <span class="raindDta"></span>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="nextDay">
+
+
+
+                    <div class="nextDayDetails">
+                        <!-- weather forecasting upto 5 days. -->
+                        <div class="nextDaysContainer">
+                            <div class="nextDaysTemp">31<sup class="superscript">&deg;C</sup></div>
+                            <div class="nextDaysIcon"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png "
+                                    alt="" id=""></div>
+                            <div class="nextDayName">Thu</div>
+                        </div>
+                        <div class="nextDaysContainer">
+                            <div class="nextDaysTemp">31<sup class="superscript">&deg;C</sup></div>
+                            <div class="nextDaysIcon"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png "
+                                    alt="" id=""></div>
+                            <div class="nextDayName">Thu</div>
+                        </div>
+                        <div class="nextDaysContainer">
+                            <div class="nextDaysTemp">31<sup class="superscript">&deg;C</sup></div>
+                            <div class="nextDaysIcon"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png "
+                                    alt="" id=""></div>
+                            <div class="nextDayName">Thu</div>
+                        </div>
+                        <div class="nextDaysContainer">
+                            <div class="nextDaysTemp">31<sup class="superscript">&deg;C</sup></div>
+                            <div class="nextDaysIcon"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png "
+                                    alt="" id=""></div>
+                            <div class="nextDayName">Thu</div>
+                        </div>
+                        <div class="nextDaysContainer">
+                            <div class="nextDaysTemp">31<sup class="superscript">&deg;C</sup></div>
+                            <div class="nextDaysIcon"><img
+                                    src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png "
+                                    alt="" id=""></div>
+                            <div class="nextDayName">Thu</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right hand side content -->
+            <div class="content2 content">
+                <div class="searchbar">
+
+                    <input type="search" name="" placeholder="Search Area" id="searchArea"><img src="search_icon.png"
+                        alt="" id="searchIcon">
+                </div>
+                <div class="searchContent"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
