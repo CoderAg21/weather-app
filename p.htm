@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .clock{
+           
+            height: 400px;
+            border: 2px solid burlywood;
+            border-radius: 50%;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .hr{
+            transform-origin: top;
+            
+           
+            border-top: 2px solid black;
+            width: 100px;
+          
+            
+            
+        }
+        .min{
+            transform-origin: top;
+            transform: rotate(23deg);
+            
+            border-top: 2px solid black;
+            width: 200px;
+        }
+        .sec{
+            transform-origin: top;
+         
+          transform: rotate(90deg);
+            border-top: 2px solid black;
+            width: 300px;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hr"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+
+    </div>
+    <script>
+        let hr = document.querySelector('.hr');
+        let min = document.querySelector('.min');
+        let sec = document.querySelector('.sec');
+    </script>
+</body>
+</html>

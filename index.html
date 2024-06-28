@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
-    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <h3 class="project_title"><center>AI WEATHER <span style="font-size: 1.5rem;">(Search Region Across The World)</span></center></h3>
     <div class="mainContent">
         <div class="displayWeather">
             <div class="content1 content">
@@ -27,7 +31,7 @@
 
                 <div class="currentDate">
                     <div class="cDate">27 June'21</div>
-                    <div class="cDay">Thursday | <span class="cTime">00:00:00</span></div>
+                    <div><span class="cDay">Day</span> | <span class="cTime">00:00:00</span></div>
                 </div>
 
 
@@ -63,23 +67,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 <div class="nextDay">
-
-
 
                     <div class="nextDayDetails">
                         <!-- weather forecasting upto 5 days. -->
@@ -127,10 +115,48 @@
             <div class="content2 content">
                 <div class="searchbar">
 
-                    <input type="search" name="" placeholder="Search Area" id="searchArea"><img src="search_icon.png"
+                    <input type="search" name="" placeholder="Search Region" id="searchArea"><img src="search_icon.png"
                         alt="" id="searchIcon">
                 </div>
                 <div class="searchContent"></div>
+                <div class="manyClocks">
+                    <div class="clock">
+                        <h3>sunrise</h3>
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+
+                    </div>
+                    <div class="clock clock2">
+                        <h3>GMT+05</h3>
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+
+                    </div>
+                    <div class="clock">
+                        <h3>sunset</h3>
+                        <div class="hour"></div>
+                        <div class="minute"></div>
+                        <div class="second"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="fewdata">
+                    <div class="aqi circledata">
+                        <div class="aqiData ranger">
+                            <h6>AQI</h6>
+                        </div>
+
+                    </div>
+                    <div class="uvIndex circledata">
+                        <div class="uvData ranger">
+                            <h6>UV Index</h6>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
