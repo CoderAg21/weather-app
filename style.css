@@ -8,8 +8,6 @@
 body {
     background: linear-gradient(90deg, #9796f0, #fbc7d4);
 
-
-
 }
 
 .project_title {
@@ -139,7 +137,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     height: 40%;
-    width: 99%;
+    width: 97%;
 }
 
 ::-webkit-scrollbar {
@@ -147,7 +145,7 @@ body {
 }
 
 .nextDayDetails {
-    width: 460px;
+    width: 512px;
     display: flex;
     justify-content: flex-start;
 }
@@ -161,11 +159,9 @@ body {
     align-items: center;
     flex-direction: column;
     /* background-color: #d896f0; */
-    top: 10vh;
     position: relative;
-
-    top: 7vh;
-    left: 3vh;
+    top: 45px;
+    left: 8px;
     border-radius: 10px;
     background: linear-gradient(45deg, #ffecd2, #fcb69f);
 }
@@ -414,6 +410,14 @@ body {
     .searchContent{
         width: 97%;
         right: 1%;
+    }
+    
+}
+@media screen and (max-width:380px) {
+    .nextDaysContainer{
+        top: 14px;
+        left: 10px;
+        left: 10px;
     }
     
 }
