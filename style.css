@@ -12,6 +12,7 @@ body {
 
 .project_title {
     font-family: "Oswald", sans-serif;
+    margin: 2px 0 20px 0;
     font-size: 2rem;
     background-image: url('text.jpg');
     background-clip: text;
@@ -22,8 +23,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
 
 }
 
