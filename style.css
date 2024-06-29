@@ -7,8 +7,6 @@
 
 body {
     background: linear-gradient(90deg, #9796f0, #fbc7d4);
-    display: flex;
-    justify-content: center;
 
 
 
@@ -16,10 +14,7 @@ body {
 
 .project_title {
     font-family: "Oswald", sans-serif;
-
     font-size: 2rem;
-    position: absolute;
-    top: 0px;
     background-image: url('text.jpg');
     background-clip: text;
     color: transparent;
@@ -210,10 +205,11 @@ body {
 }
 
 .searchContent {
-    width: 37%;
-    height: 34vh;
+    width: 287px;
+    height: 43%;
     position: absolute;
-    right: 0%;
+    right: 18px;
+    border-radius: 10px;
     top: 9%;
     z-index: 2;
     overflow-y: scroll;
@@ -389,7 +385,7 @@ body {
     .content2 {
         height: 426px;
         position: absolute;
-        top: 431px;
+        top: 446px;
         width: 90vw;
         border-radius: 21px;
 
@@ -402,9 +398,21 @@ body {
         width: 90vw;
     }
 
+    .searchContent {
+        width: 86%;
+        height: 44%;
+        border-radius: 10px;
+        right: 11%;
 
 
+    }
 
+}
 
-
+@media screen and (max-width:490px) {
+    .searchContent{
+        width: 97%;
+        right: 1%;
+    }
+    
 }
