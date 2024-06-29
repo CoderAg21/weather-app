@@ -44,8 +44,14 @@ searchArea.addEventListener("input", () => {
             // creating search element
             let itemElement = document.createElement("div");
             itemElement.classList.add("items", `${i + 1}`);
-            itemElement.innerHTML = `${(response.results)[i].name} | ${(response.results)[i].country} |   <span style="font-size:10px;font-weight:bold ; background:#ebcfcf">&nbsp;&nbsp;Lat:${(response.results)[i].latitude} , Long:${(response.results)[i].longitude}</span>`
-            searchContent.append(itemElement)
+            try {
+                itemElement.innerHTML = `${(response.results)[i].name} | ${(response.results)[i].country} |   <span style="font-size:10px;font-weight:bold ; background:#ebcfcf">&nbsp;&nbsp;Lat:${(response.results)[i].latitude} , Long:${(response.results)[i].longitude}</span>`
+                searchContent.append(itemElement)
+                
+            } catch (error) {
+                return; //nothing to do here
+                
+            }
 
 
             // adding event listener to each search result
@@ -62,7 +68,6 @@ searchArea.addEventListener("input", () => {
                 p2.then((val2) => {
                     return new Promise((resolve, reject) => {
                         let readableData2 = val2.json();
-                        let readableData3 = val2.json();
                         resolve(readableData2)
 
                     });
@@ -230,7 +235,7 @@ searchArea.addEventListener("input", () => {
                 }).then((response3) => {
                     // console.log(response2.daily.uv_index_max[0])
                     let aqiNewVal = (response3.current.us_aqi) / 125
-                    console.log(aqiNewVal)
+                    //console.log(aqiNewVal)
 
 
                     aqiData.innerHTML = `<h6>AQI: ${response3.current.us_aqi}</h6>`;
@@ -254,7 +259,7 @@ searchArea.addEventListener("input", () => {
 
                     }
 
-                    console.log(response3.current.us_aqi)
+                    //console.log(response3.current.us_aqi)
                 })
 
             })
@@ -264,6 +269,7 @@ searchArea.addEventListener("input", () => {
         }
 
     })
+
 });
 
 
