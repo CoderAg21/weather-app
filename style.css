@@ -269,8 +269,8 @@ body {
     border: 1px solid black;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: -21px;
-    background-position-y: 3px;
+    background-position-x: 0;
+    background-position-y: 0;
 
 }
 
